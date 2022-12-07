@@ -11,15 +11,15 @@ INSERT INTO company_role (title, salary, dept_id) VALUES
 ('Lawyer', 180000, 4);
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES
-('John', 'Doe', 1, 1),
-('Jane', 'Doe', 2, 1),
-('Sally', 'Smith', 3, 2),
-('Mark', 'Jones', 4, 3),
+('John', 'Doe', 1, 5),
+('Jane', 'Doe', 2, 8),
+('Sally', 'Smith', 3, 7),
+
 ('Steve', 'Killark', 5, 4),
-('Hayley', 'Williams', 6, 4),
-('Larry', 'Page', 7, 5),
-('Sergey', 'Brin', 8, 5),
-('Tim', 'Cook', 9, 6);
+('Hayley', 'Williams', 6, 3),
+('Larry', 'Page', 7, 1),
+('Sergey', 'Brin', 8, 9),
+('Tim', 'Cook', 9, 8);
 
 
 

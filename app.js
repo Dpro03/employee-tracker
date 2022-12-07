@@ -7,7 +7,7 @@ let view = require("./lib/view");
 let update = require("./lib/update");
 let add = require("./lib/add");
 const DB = require("./db/connection");
-let deleteEmployee = require("./lib/add");
+let deleteEmployee = require("./lib/delete");
 
 //function to start the application
 exports.start = () => {
@@ -20,6 +20,7 @@ exports.start = () => {
         "View all employees",
         "Add employee",
         "Update employee role",
+        "Delete employee",
         "Exit",
       ],
     })
@@ -33,6 +34,9 @@ exports.start = () => {
           break;
         case "Update employee role":
           update.updateEmployeeRole();
+          break;
+        case "Delete employee":
+          deleteEmployee.deleteEmployee();
           break;
         case "Exit":
           DB.end();
